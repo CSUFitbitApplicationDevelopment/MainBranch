@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b100ffe1"
+    tools:context="csu.fitbit.MainActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+        <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_overlay"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/FeelingQuestion"
+                android:id="@+id/textView"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.86"
+                android:textAlignment="center" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=" Excellent"
+                android:layout_weight="1"
+                android:id="@+id/answer1"
+                android:background="@drawable/mybutton"
+                android:onClick="loadMainScreen"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Good"
+                android:layout_weight="1"
+                android:id="@+id/answer2"
+                android:background="@drawable/mybuttonb"
+                android:onClick="loadMainScreen"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="All right"
+                android:layout_weight="1"
+                android:id="@+id/answer3"
+                android:background="@drawable/mybuttonc"
+                android:onClick="loadMainScreen"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Awful"
+                android:layout_weight="1"
+                android:id="@+id/answer4"
+                android:background="@drawable/mybuttond"
+                android:onClick="loadMainScreen"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
