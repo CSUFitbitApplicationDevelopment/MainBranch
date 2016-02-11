@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="csu.fitbit.MainActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.8"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageButton"
+                    android:text="My Health Feedback"
+                    android:textAllCaps="false"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/mybuttond"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="loadFeedback"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageButton2"
+                    android:text="Tell us a bit about today"
+                    android:textAllCaps="false"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/mybuttond"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="loadSurvey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:text="   Tell us how you are feeling right now"
+                    android:textAllCaps="false"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/mybuttond"
+                    android:id="@+id/imageButton5"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="loadMainActivity"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
+
+

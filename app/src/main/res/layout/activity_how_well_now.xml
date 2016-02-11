@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/FeelingQuestion"
+            android:text="How are you feeling right now?"
             android:id="@+id/textView"
             android:textColor="#ffffff"
             android:textStyle="bold"
