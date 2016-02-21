@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="csu.fitbit.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/run"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView2"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/randomtxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="30dp"
+                style="@style/Shadow"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+
+

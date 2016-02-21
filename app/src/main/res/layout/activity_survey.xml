@@ -1,0 +1,337 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="csu.fitbit.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_gravity="left|top" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How much exercies or sports did you do or play today?"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seekBar1"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How well did you socialise today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress"
+                        android:id="@+id/seekBar2"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How would you rate the healthiness of your food intake today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress"
+                        android:id="@+id/seekBar3"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How well did you sleep today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress"
+                        android:id="@+id/seekBar4"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How successful were you at work or study today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress"
+                        android:id="@+id/seekBar5"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How stressed were you today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progressreverse"
+                        android:id="@+id/seekBar6"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How angry were you today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progressreverse"
+                        android:id="@+id/seekBar7"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How would you rate your alcohol input today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progressreverse"
+                        android:id="@+id/seekBar8"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How much abusiveness do you think you received at work or school today?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progressreverse"
+                        android:id="@+id/seekBar9"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    style="@style/Shadow"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="How would you rate your day?"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress"
+                        android:id="@+id/seekBar10"
+                        style="@style/Seekbar"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/button"
+                    android:onClick="submit"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
+
+
